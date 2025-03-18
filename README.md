@@ -3,16 +3,14 @@
 A modern financial services platform built with Next.js.
 
 ## Features
-
-- Responsive design
-- Authentication with Auth0
-- Member management
-- Event registration
-- Resource library
-- Contact forms
+- 🎨 Responsive design with Tailwind CSS
+- 🔐 Authentication with Auth0
+- 👥 Member management
+- 📅 Event registration
+- 📚 Resource library
+- 📝 Contact forms
 
 ## Tech Stack
-
 - Next.js 14
 - TypeScript
 - Tailwind CSS
@@ -21,60 +19,42 @@ A modern financial services platform built with Next.js.
 - Framer Motion
 
 ## Development
+```bash
+# Install dependencies
+npm install
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/retiep/finanza-zuid.git
-   ```
+# Start development server
+npm run dev
+```
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+## Environment Variables
+Create a `.env.local` file with:
+```
+AUTH0_SECRET=
+AUTH0_BASE_URL=
+AUTH0_ISSUER_BASE_URL=
+AUTH0_CLIENT_ID=
+AUTH0_CLIENT_SECRET=
+```
 
-3. Set up environment variables:
-   ```bash
-   cp .env.example .env.local
-   ```
-   Then edit `.env.local` with your values.
+## Production
+```bash
+# Build for production
+npm run build
 
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
+# Start production server
+npm start
+```
 
 ## Deployment
-
-This project is deployed on Vercel. Here's how to deploy your own instance:
-
-1. Fork this repository
-2. Sign up for [Vercel](https://vercel.com)
-3. Import your fork into Vercel
-4. Configure environment variables
-5. Deploy!
-
-### Branch Strategy
-
-- `main`: Production branch, deployed to finanzazuid.nl
-- `develop`: Development branch, used for integration
-- Feature branches: Create from `develop`, merge via PR
-
-### CI/CD
-
-We use GitHub Actions for:
-- Automated testing
-- Linting
-- Preview deployments
-- Production deployments
+This project is deployed on Vercel. For deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
 
 ## Contributing
-
-1. Create a feature branch from `develop`
-2. Make your changes
-3. Create a Pull Request
-4. Wait for CI checks and review
-5. Merge and deploy!
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
-
-Copyright © 2024 Finanza Zuid. All rights reserved.
+This project is private and proprietary. All rights reserved.
