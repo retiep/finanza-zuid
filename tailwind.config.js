@@ -8,20 +8,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0066CC',
-        text: {
-          primary: '#1D1D1F',
-          secondary: '#86868B'
-        },
-        background: {
-          light: '#F5F5F7',
-          white: '#FFFFFF'
-        }
+        primary: '#1a365d',
+        secondary: '#2b6cb0',
+        accent: '#4299e1',
       },
-      fontFamily: {
-        roboto: ['var(--font-roboto)', 'sans-serif'],
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
-  plugins: [],
-}; 
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+}
