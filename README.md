@@ -4,7 +4,7 @@ A modern financial services platform built with Next.js.
 
 ## Features
 
-- Modern, responsive design
+- Responsive design
 - Authentication with Auth0
 - Member management
 - Event registration
@@ -16,40 +16,65 @@ A modern financial services platform built with Next.js.
 - Next.js 14
 - TypeScript
 - Tailwind CSS
-- Auth0 for authentication
-- Supabase for database
-- Framer Motion for animations
+- Auth0
+- Supabase
+- Framer Motion
 
 ## Development
 
-To run the development server:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/retiep/finanza-zuid.git
+   ```
 
-```bash
-npm install
-npm run dev
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Environment Variables
+3. Set up environment variables:
+   ```bash
+   cp .env.example .env.local
+   ```
+   Then edit `.env.local` with your values.
 
-Create a `.env.local` file with the following variables:
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-```env
-# Auth0
-NEXT_PUBLIC_AUTH0_CLIENT_ID=
-AUTH0_CLIENT_SECRET=
-AUTH0_ISSUER_BASE_URL=
-AUTH0_SECRET=
+## Deployment
 
-# Supabase
-NEXT_PUBLIC_SUPABASE_URL=
-SUPABASE_SERVICE_ROLE_KEY=
-```
+This project is deployed on Vercel. Here's how to deploy your own instance:
 
-## Production
+1. Fork this repository
+2. Sign up for [Vercel](https://vercel.com)
+3. Import your fork into Vercel
+4. Configure environment variables
+5. Deploy!
 
-To build for production:
+### Branch Strategy
 
-```bash
-npm run build
-npm start
-``` 
+- `main`: Production branch, deployed to finanzazuid.nl
+- `develop`: Development branch, used for integration
+- Feature branches: Create from `develop`, merge via PR
+
+### CI/CD
+
+We use GitHub Actions for:
+- Automated testing
+- Linting
+- Preview deployments
+- Production deployments
+
+## Contributing
+
+1. Create a feature branch from `develop`
+2. Make your changes
+3. Create a Pull Request
+4. Wait for CI checks and review
+5. Merge and deploy!
+
+## License
+
+Copyright © 2024 Finanza Zuid. All rights reserved.
